@@ -4,9 +4,9 @@ import tensorflow as tf
 from flask_cors import CORS
 
 # Load models
-model1 = tf.keras.models.load_model('models/history_Stroke.h5')
-model2 = tf.keras.models.load_model('models/history_Cardio.h5')
-model3 = tf.keras.models.load_model('models/history_CFC.h5')
+model1 = tf.keras.models.load_model('history_Stroke.h5')
+model2 = tf.keras.models.load_model('history_Cardio.h5')
+model3 = tf.keras.models.load_model('history_CFC.h5')
 
 app = Flask(__name__)
 CORS(app)
